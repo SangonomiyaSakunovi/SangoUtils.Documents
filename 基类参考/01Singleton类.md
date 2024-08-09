@@ -25,6 +25,8 @@ public abstract class Singleton<T> where T : class
 
 # 2. Unity项目
 
+该基类存在继承深度问题，建议优先考虑Source Generator，见 **语法事件** 章节.
+
 ```cs
 public abstract class UnitySingleton<T> : MonoBehaviour where T : MonoBehaviour
 {
