@@ -11,9 +11,9 @@
 
 在Inspector面板订阅事件，注意必须调整Position与Rotation映射.    
 已知的映射有：  
-+ Tracking Reference Channel B: front, Tracking Reference Channel C: Left.    
++ HTC Vive Tracker: Right Hand Coordinate, Unity: Left Hand Coordinate. X Reverse.    
 Position: -x, y, z.     
-Rotation: -z, -y, x, w.
+Rotation: x, -y, -z, w.
 
 # 3. Python上位机端
 ## 3.1 运行前检查

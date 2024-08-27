@@ -1,21 +1,25 @@
 # 1. 基本原则
 
-上位机与下位机均需运行，顺序任意.   
-发送数据使用udp，上位机可修改interval，下位机循环监听即可.
+只适用于USB相机， 必须提前连接好相机防止出错。
 
-# 2. Unity下位机端
+# 2. Unity端
 
-需要引入com.sangoutils.webcamerahelpers包.
+需要引入com.sangoutils.htcvivetrackerhelper包。
 
-## 2.1 WebCameraDataReceiver
+## 2.1 WebCameraUGUI
+
+在Inspector面板可以修改对应参数，注意有两种渲染方式。
+
+### 2.1.1 Canvas+RawImage
+
+推荐使用的方式，需要场景中下述组件：
+
+1) Canvas：     
+(1) RenderMode为Screen Space - Camera   
+(2) 拖拽为Render Camera赋值     
 
 
-
-# 3. Python上位机端
-## 3.1 运行前检查
-
-检查？？
-
-## 3.2 运行
-
-直接运行run.bat
+2) Camera:      
+(1) Render Type为Base    
+(2) Physical Camera为True  
+(3) Environment中Background Type为Solid Color       
